@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+t.<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -106,7 +106,7 @@
 
             document.getElementById('resultBool').textContent = result.bool ? 'True' : 'False';
             console.log(result)
-            console.log(result.confidence)
+            console.log(result.confidence, resu.bool)
             const confidenceBar = document.getElementById('confidence');
             confidenceBar.value = result.confidence * 100;
             confidenceBar.style.backgroundColor = result.bool ? 'green' : 'red';
