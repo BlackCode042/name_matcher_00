@@ -104,12 +104,12 @@ t.<!DOCTYPE html>
 
             const result = await response.json();
 
-            document.getElementById('resultBool').textContent = result.bool ? 'True' : 'False';
+            document.getElementById('resultBool').textContent = result.result.bool ? 'True' : 'False';
             console.log(result)
             console.log(result.confidence, result.bool)
             const confidenceBar = document.getElementById('confidence');
-            confidenceBar.value = result.confidence * 100;
-            confidenceBar.style.backgroundColor = result.bool ? 'green' : 'red';
+            confidenceBar.value = result.result.confidence * 100;
+            confidenceBar.style.backgroundColor = result.result.bool ? 'green' : 'red';
             document.getElementById('confidencePercent').textContent = `${(result.confidence * 100).toFixed(2)}%`;
 
             document.getElementById('displayInput1').textContent = input1;
