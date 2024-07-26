@@ -94,7 +94,7 @@
             const input1 = document.getElementById('input1').value;
             const input2 = document.getElementById('input2').value;
 
-            const response = await fetch('http://localhost:5010/similar', {
+            const response = await fetch('http://127.0.0.1:8000/similar', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
