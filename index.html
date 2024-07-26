@@ -110,7 +110,7 @@ t.<!DOCTYPE html>
             const confidenceBar = document.getElementById('confidence');
             confidenceBar.value = result.result.confidence * 100;
             confidenceBar.style.backgroundColor = result.result.bool ? 'green' : 'red';
-            document.getElementById('confidencePercent').textContent = `${(result.confidence * 100).toFixed(2)}%`;
+            document.getElementById('confidencePercent').textContent = `${(result.result.confidence * 100).toFixed(2)}%`;
 
             document.getElementById('displayInput1').textContent = input1;
             document.getElementById('displayInput2').textContent = input2;
